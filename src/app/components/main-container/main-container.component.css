@@ -1,4 +1,7 @@
-table{
+.wrapper{
+ padding: 30px;   
+    
+}table{
     width: 100%;
     text-align: left;
 }
