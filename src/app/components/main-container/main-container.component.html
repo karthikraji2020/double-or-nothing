@@ -1,7 +1,7 @@
 <div class="wrapper">
+    <h1 class="title">Select Playing 9</h1>
 <div id="search-component">
-    <h4>user Search</h4>
-    <input type="text" id="search-username"  placeholder="Search Players"  (keyup)="onkeyUp($event.target.value)" />
+   <i class="fa fa-search"></i> <input type="text" id="search-username"  placeholder="Search Players"  (keyup)="onkeyUp($event.target.value)" />
   </div>
 
 <table>
@@ -31,7 +31,7 @@
         </th>
     </thead>
     <tbody>
-        <tr class="tr" *ngFor="let user of users | search:filter" >
+        <tr class="tr" *ngFor="let user of users | slice:0:9  | search:filter" >
             <td class="select" (click)="select(user)"><input type="checkbox" name="{{user.Name}}" id="{{user.Name}}"></td>
             <td class="player-name">{{user.Name}}</td>
             <td>

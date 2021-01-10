@@ -1,0 +1,32 @@
+<div class="bet-wrapper">
+    <div class="container">
+       
+        <ng-container >
+            <div class="row">
+                <div class="card-wrapper">
+                    <div class="card" [ngClass]="i==winner ? 'border-success' : 'border-danger'"  *ngFor="let user of selectedUsers | slice:0:9;let i= index" >
+                        <div class="image-container" >
+                        <img [src]="user.ProfileImage" [alt]="user.ProfileImage">
+                        </div>
+                        <div  id="white" class="card-body">
+                            <div class="result" [ngClass]="i==winner ? 'bg-success' : 'bg-danger'"> 
+                                {{user.description}}
+                            </div>
+                                <div class="row">
+                                    <div class="player-name">
+                                        {{user.Name}}
+                                    </div>
+                                    <div class="receipe-price">
+                                        {{user.Price}}
+                                    </div>
+                                    <div class="receipe-bet">
+                                        {{user.Bet}}
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

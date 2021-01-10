@@ -10,6 +10,7 @@ import { MainContainerComponent } from './components/main-container/main-contain
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { BetService } from './service/bet.service';
 import { SearchPipe } from './search.pipe';
+import { BetComponent } from './components/bet/bet.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchPipe } from './search.pipe';
     SidenavbarComponent,
     MainContainerComponent,
     SearchbarComponent,
-    SearchPipe
+    SearchPipe,
+    BetComponent
   ],
   imports: [
     BrowserModule,

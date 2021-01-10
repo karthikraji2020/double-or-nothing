@@ -1,0 +1,94 @@
+.bet-wrapper{
+    /* background-color: rgb(241, 241, 241); */
+    height: 100%;
+    width: 100%;
+}
+.container {
+        max-width: 86%;
+        margin: 0 auto;
+}
+.card-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    flex: 0 15rem;
+    margin: 1rem  2.1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.15),0px 4px 8px rgba(0,0,0,0.25);
+    text-align: center;
+    background: #fff;
+    height: 200px;
+}
+.card:hover{
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.25),0px 4px 8px rgba(0,0,0,0.45);
+}
+.image-container{
+    max-width: 15rem;
+    max-height: 9rem;
+}
+.card img {
+    height: 100px;
+    width: 100px;
+}
+:host#white{
+    background: #fff;
+}
+.card-body{
+    background: #fff;
+    border-radius: 1.5rem;
+}
+.card-body .player-name {
+    background: #fff;
+    font-weight: 700;
+}
+.card-body .result-description  {
+    background: #fff;
+    font-weight: 500;
+    font-size: medium;
+}
+.card-body.white{
+    background: #fff;
+}
+.card .result{
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50;
+    bottom: 0;
+    width: auto;
+    height: 1.1rem;
+    /* background: #262626; */
+    color: #fff;
+    font-weight: 600;
+    padding:.3rem .7rem;
+    border-radius: 0 1.5rem 0 1.5rem;
+
+}
+
+.label{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ccc;
+}
+.category-title{
+    text-align: right;
+    text-transform: capitalize;
+}
+.border-danger{
+    border:2px solid rgb(206, 29, 29);
+}
+.border-success{
+    border:2px solid green;
+}
+.bg-success{
+    background-color:green;
+}
+.bg-danger{
+    background-color:rgb(206, 29, 29);
+
+}

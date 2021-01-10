@@ -3,4 +3,5 @@ export class User {
     Price: string;
     Bet: string;
     ProfileImage: string;
+    description?: string;
 }

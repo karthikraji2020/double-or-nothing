@@ -21,6 +21,6 @@ export class SidenavbarComponent implements OnInit {
   }
   
   start(){
-   
+    this.router.navigate(['/Bet'])
   }
 }

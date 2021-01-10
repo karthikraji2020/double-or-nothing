@@ -60,3 +60,9 @@ input[type=checkbox]:checked{
     display: inline-block;
     float: right;
 }
+.title{
+    color: blue;
+}
+#search-component{
+    padding: 20px ;
+}
