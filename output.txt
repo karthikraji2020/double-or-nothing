@@ -1,2 +1,6 @@
 
 Deployed URL :https://doublenothingbetgame.herokuapp.com/
+1) sort
+2) search features completed 
+
+3) git hub repository https://github.com/karthikraji2020/double-or-nothing
