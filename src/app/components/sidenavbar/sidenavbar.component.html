@@ -1,0 +1,23 @@
+
+
+<h4>Playing 9</h4>
+
+<div class="selected-list" *ngFor="let user of selectedUsers$">
+
+    <div class="user" *ngIf="user">
+        <div class="avatar">
+
+        </div>
+        <div class="details">
+            <h3 class="username">
+                {{user.name}}
+            </h3>
+            <p class="price">
+                {{user.name}}
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<button class="start-btn" (click)="start()" > start</button>

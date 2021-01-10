@@ -1,0 +1,43 @@
+
+<div id="search-component">
+    <h4>user Search</h4>
+    <input type="text" id="search-username"  placeholder="Search Players"  (keyup)="onkeyUp($event.target.value)" />
+  </div>
+
+<table>
+    <thead>
+        <th>
+            select
+        </th>
+        <th class="player-name" (click)="toggleSortName()">
+            Name
+            <span class="sort">
+                    <i *ngIf="isAssendingName" class="fa fa-angle-double-up"></i>
+                <i *ngIf="!isAssendingName" class="fa fa-angle-double-down"></i>
+            </span>
+        </th>
+        <th>
+            Avatar
+        </th>
+        <th (click)="toggleSortBet()">
+            Bet
+            <span class="sort">
+                <i *ngIf="isAssendingBet" class="fa fa-angle-double-up"></i>
+                <i *ngIf="!isAssendingBet" class="fa fa-angle-double-down"></i>
+            </span>
+        </th>
+        <th>
+            Price
+        </th>
+    </thead>
+    <tbody>
+        <tr class="tr" *ngFor="let user of users | search:filter" >
+            <td class="select" (click)="select(user)"><input type="checkbox" name="{{user.Name}}" id="{{user.Name}}"></td>
+            <td class="player-name">{{user.Name}}</td>
+            <td>
+                <img src="{{user.ProfileImage}}" alt="{{user.ProfileImage}}" ></td>
+            <td>{{user.Bet}}</td>
+            <td class="price">{{user.Price}}</td>
+        </tr>
+    </tbody>
+</table>
